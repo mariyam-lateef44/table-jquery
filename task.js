@@ -5,9 +5,9 @@ $(function(){
     $("#todos").on("click","li", removeMe);
 });
 function handlebtnclick(){
-    alert("Add btn");
+    //alert("Add btn");
     var newtodo = $("#newtodo").val();
-    //$("#todos").append("<li>" + newtodo + "</li>");
+    $("#todos").append("<li>" + newtodo + "</li>");
     if(!newtodo){
         $("#newtodo").addClass("error");
         return;
